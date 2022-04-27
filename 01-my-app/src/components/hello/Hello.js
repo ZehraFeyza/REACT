@@ -1,6 +1,6 @@
 import Comp from "../comp/Comp";
 const Hello=()=>{
-    return  <div>Hello Baby</div>;
+    return (<div>Bu benım ilk componentim<Comp/></div>) ;
 
 };
 export default Hello;

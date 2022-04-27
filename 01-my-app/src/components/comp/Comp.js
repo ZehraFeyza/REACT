@@ -1,6 +1,6 @@
 
 const Comp=()=>{
-    return <div>Comp kompo</div>
+    return <div>bu bir componenttir (Comp) </div>
 
 }
 export default Comp;

@@ -1,0 +1,21 @@
+.clock-container{
+    font-family:cursive;
+    display: flex;
+    background-color: black;
+    color: chartreuse;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock{
+    font-size: 4rem;
+    padding-right: 1rem;
+}
+.date{
+    font-size: 2rem;
+
+}
+.day{
+    font-size: 1.3rem;
+}

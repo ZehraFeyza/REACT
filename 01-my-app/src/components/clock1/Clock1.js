@@ -15,11 +15,11 @@ else message="night";
 
 
     return (
-    <div className="clock-container">
-        <div className="clock"> {timeStr}  </div>
+    <div classnameName="clock-container">
+        <div classnameName="clock"> {timeStr}  </div>
         <div>
-            <div className="date"> {dateStr} </div>
-            <div className="day">{dayStr} {message} </div>
+            <div classnameName="date"> {dateStr} </div>
+            <div classnameName="day">{dayStr} {message} </div>
         </div>
     </div>
     );

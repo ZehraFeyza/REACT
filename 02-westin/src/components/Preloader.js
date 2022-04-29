@@ -4,15 +4,15 @@ const Preloader = () => {
   return (
    
     <div id="angela-preloader">
-        <div classnameName="preloader">
-            <div classnameName="spinner"></div>
-            <div classnameName="loader">
-                <span data-text="W" classnameName="letter-animation">W</span>
-                <span data-text="E" classnameName="letter-animation">E</span>
-                <span data-text="S" classnameName="letter-animation">S</span>
-                <span data-text="T" classnameName="letter-animation">T</span>
-                <span data-text="I" classnameName="letter-animation">I</span>
-                <span data-text="N" classnameName="letter-animation">N</span>
+        <div className="preloader">
+            <div className="spinner"></div>
+            <div className="loader">
+                <span data-text="W" className="letter-animation">W</span>
+                <span data-text="E" className="letter-animation">E</span>
+                <span data-text="S" className="letter-animation">S</span>
+                <span data-text="T" className="letter-animation">T</span>
+                <span data-text="I" className="letter-animation">I</span>
+                <span data-text="N" className="letter-animation">N</span>
             </div>
         </div>
     </div>

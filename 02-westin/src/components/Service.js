@@ -2,11 +2,11 @@ import React from 'react'
 
 const Service = (props) => {
   return (
-    <div classname="services-box">
+    <div className="services-box">
                             <img src={props.resim} alt="/"/>
-                            <div classname="services-content">
-                                <h5 classname="services-head">{props.baslik}</h5>
-                                <p classname="services-description mb-0">{props.aciklama}</p></div>
+                            <div className="services-content">
+                                <h5 className="services-head">{props.baslik}</h5>
+                                <p className="services-description mb-0">{props.aciklama}</p></div>
                         </div>
   )
 }

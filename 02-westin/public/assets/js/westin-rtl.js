@@ -25,10 +25,10 @@ $(document).ready(function () {
                 o || (t.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), (e.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), (n = s.clientY), (i = s.clientX);
             }),
                 $("body").on("mouseenter", "a, .cursor-pointer", function () {
-                    e.classList.add("cursor-hover"), t.classList.add("cursor-hover");
+                    e.classnameList.add("cursor-hover"), t.classnameList.add("cursor-hover");
                 }),
                 $("body").on("mouseleave", "a, .cursor-pointer", function () {
-                    ($(this).is("a") && $(this).closest(".cursor-pointer").length) || (e.classList.remove("cursor-hover"), t.classList.remove("cursor-hover"));
+                    ($(this).is("a") && $(this).closest(".cursor-pointer").length) || (e.classnameList.remove("cursor-hover"), t.classnameList.remove("cursor-hover"));
                 }),
                 (e.style.visibility = "visible"),
                 (t.style.visibility = "visible");
@@ -63,21 +63,21 @@ $(document).ready(function () {
     var $pageContent = $('.page-content');
 
     $sidebarToggler.on('click', function(){
-        $(this).toggleClass('move lni-chevron-left lni-menu');
-        $sidebar.toggleClass('hide');
-        // $pageContent.toggleClass('full-width');
+        $(this).toggleClassName('move lni-chevron-left lni-menu');
+        $sidebar.toggleClassName('hide');
+        // $pageContent.toggleClassName('full-width');
     });
 
     if($window.width() < 1199){
-        $sidebarToggler.addClass('move lni-menu');
-        $sidebarToggler.removeClass('lni-chevron-left');
-        $sidebar.addClass('hide');
-        $pageContent.addClass('full-width');
+        $sidebarToggler.addClassName('move lni-menu');
+        $sidebarToggler.removeClassName('lni-chevron-left');
+        $sidebar.addClassName('hide');
+        $pageContent.addClassName('full-width');
         $('.sidebar .navbar-nav a, .sidebar .list-group a').on('click', function(){
             setTimeout(function () {
-                $sidebarToggler.toggleClass('move lni-chevron-left lni-menu');
-                $sidebar.toggleClass('hide');
-                $pageContent.toggleClass('full-width');
+                $sidebarToggler.toggleClassName('move lni-chevron-left lni-menu');
+                $sidebar.toggleClassName('hide');
+                $pageContent.toggleClassName('full-width');
             });
         });
     }
@@ -86,31 +86,31 @@ $(document).ready(function () {
     // Theme Option
     
     $('.color-scheme li .dark-scheme').on('click', function(){
-        $("body").addClass('westin-dark');
-        $('.color-scheme li a').removeClass('active');
-        $(this).addClass('active');
+        $("body").addClassName('westin-dark');
+        $('.color-scheme li a').removeClassName('active');
+        $(this).addClassName('active');
         //Change the logo img property 
         $("#logo").attr("src", 'assets/img/westin-logo-dark.png');
     });
 
     $('.color-scheme li .light-scheme').on('click', function(){
-        $("body").removeClass('westin-dark');
-        $('.color-scheme li a').removeClass('active');
-        $(this).addClass('active');
+        $("body").removeClassName('westin-dark');
+        $('.color-scheme li a').removeClassName('active');
+        $(this).addClassName('active');
         //Change the logo img property 
         $("#logo").attr("src", 'assets/img/westin-logo.png');
     });
 
     $('.theme-skin li .border-skin').on('click', function(){
-        $("body").addClass('border-style-demo');
-        $('.theme-skin li a').removeClass('active');
-        $(this).addClass('active');
+        $("body").addClassName('border-style-demo');
+        $('.theme-skin li a').removeClassName('active');
+        $(this).addClassName('active');
     });
 
     $('.theme-skin li .flat-skin').on('click', function(){
-        $("body").removeClass('border-style-demo');
-        $('.theme-skin li a').removeClass('active');
-        $(this).addClass('active');
+        $("body").removeClassName('border-style-demo');
+        $('.theme-skin li a').removeClassName('active');
+        $(this).addClassName('active');
     });
 
     $("ul.pattern .color1").on('click', function(){
@@ -150,7 +150,7 @@ $(document).ready(function () {
         return $("#option-color").attr("href", "assets/css/color/mono.css"), !1
     });
     $("#color-switcher .pallet-button").on('click', function(){
-        return $("#color-switcher .color-pallet").toggleClass('show'), !1
+        return $("#color-switcher .color-pallet").toggleClassName('show'), !1
     })
     $("ul.pattern .color13").on('click', function(){
         return $("#option-color-two").attr("href", "assets/css/color/pink.css"), !1
@@ -210,9 +210,9 @@ $(document).ready(function () {
 });
 
 $window.on("load", (function() {
-    $("#angela-preloader").addClass("loaded");
+    $("#angela-preloader").addClassName("loaded");
 
-        if ($("#angela-preloader").hasClass("loaded")) {
+        if ($("#angela-preloader").hasClassName("loaded")) {
             $("#angela-preloader").delay(900).queue(function () {
                 $(this).remove();
             });
@@ -231,8 +231,8 @@ $window.on("load", (function() {
     });
     $pfilter.find('a').on("click",function() {
         var filterValue = $(this).attr('data-filter');
-        $pfilter.find('a').removeClass('active');
-        $(this).addClass('active');
+        $pfilter.find('a').removeClassName('active');
+        $(this).addClassName('active');
         $grid.isotope({
             filter: filterValue,
         });
@@ -244,20 +244,20 @@ $window.on("load", (function() {
         var count_items = $(itemElems).length;
         if (count_items > initial_items) {
             $showMore.show();
-            $showMore.parent('.button-border').addClass('ml-2 ml-sm-4').removeClass('p-0');
+            $showMore.parent('.button-border').addClassName('ml-2 ml-sm-4').removeClassName('p-0');
             
         } else {
             $showMore.hide();
-            $showMore.parent('.button-border').removeClass('ml-2 ml-sm-4').addClass('p-0');
+            $showMore.parent('.button-border').removeClassName('ml-2 ml-sm-4').addClassName('p-0');
         }
-        if ($('.portfolio-item').hasClass('visible_item')) {
-            $('.portfolio-item').removeClass('visible_item');
+        if ($('.portfolio-item').hasClassName('visible_item')) {
+            $('.portfolio-item').removeClassName('visible_item');
         }
         var index = 0;
 
         $(itemElems).each(function() {
             if (index >= initial_items) {
-                $(this).addClass('visible_item');
+                $(this).addClassName('visible_item');
             }
             index++;
         });
@@ -268,13 +268,13 @@ $window.on("load", (function() {
         var itemsCount = 0;
         $('.visible_item').each(function() {
             if (itemsCount < pagination) {
-                $(this).removeClass('visible_item');
+                $(this).removeClassName('visible_item');
                 itemsCount++;
             }
         });
         if (itemsCount >= itemsMax) {
             $showMore.hide();
-            $showMore.parent('.button-border').removeClass('ml-2 ml-sm-4').addClass('p-0');
+            $showMore.parent('.button-border').removeClassName('ml-2 ml-sm-4').addClassName('p-0');
         }
         $grid.isotope('layout');
     }
@@ -284,13 +284,13 @@ $window.on("load", (function() {
         var itemsCount = 0;
         $('.portfolio-item').each(function() {
             if (itemsCount >= pagination) {
-                $(this).addClass('visible_item');
+                $(this).addClassName('visible_item');
             }
             itemsCount++;
         });
         if (itemsCount < itemsMax || initial_items >= itemsMax) {
             $showMore.hide();
-            $showMore.parent('.button-border').removeClass('ml-2 ml-sm-4').addClass('p-0');
+            $showMore.parent('.button-border').removeClassName('ml-2 ml-sm-4').addClassName('p-0');
         }
         $grid.isotope('layout');
     }
@@ -307,9 +307,9 @@ $window.on('scroll', function () {
     //Scroll Top
     var $returnToTop = $('.return-to-top');
     if ($window.scrollTop() > 150) {
-        $returnToTop.addClass('show');
+        $returnToTop.addClassName('show');
     } else {
-        $returnToTop.removeClass('show');
+        $returnToTop.removeClassName('show');
     }
     $returnToTop.on('click', function(){
         $root.stop().animate({
@@ -326,7 +326,7 @@ $window.on('scroll', function () {
             countOffset = countId.offset().top;
         if (scroll + winH > countOffset) {
             $('.timer').countTo();
-            $('.count-number').removeClass('timer');
+            $('.count-number').removeClassName('timer');
         }
     }
 
@@ -365,22 +365,22 @@ function sendEmail() {
     var comments = $('#comments').val();
 
     if(!name){
-        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
+        $('#message').toast('show').addClassName('bg-danger').removeClassName('bg-success');
         $('.toast-body').html('First Name is required');
     } else if(!family){
-        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
+        $('#message').toast('show').addClassName('bg-danger').removeClassName('bg-success');
         $('.toast-body').html('Last Name is required');
     } else if(!email){
-        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
+        $('#message').toast('show').addClassName('bg-danger').removeClassName('bg-success');
         $('.toast-body').html('Email is required');
     } else if(!validateEmail(email)){
-        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
+        $('#message').toast('show').addClassName('bg-danger').removeClassName('bg-success');
         $('.toast-body').html('Email is not valid');
     } else if(!phone){
-        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
+        $('#message').toast('show').addClassName('bg-danger').removeClassName('bg-success');
         $('.toast-body').html('phone is required');
     } else if(!comments){
-        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
+        $('#message').toast('show').addClassName('bg-danger').removeClassName('bg-success');
         $('.toast-body').html('Comments is required');
     }else {
         $.ajax({
@@ -388,25 +388,25 @@ function sendEmail() {
             data: $("#contactForm").serialize(),
             url:  "sendEmail.php",
             beforeSend: function() {
-                $('#submit-btn').html('<span class="spinner-border spinner-border-sm"></span> Loading..');
+                $('#submit-btn').html('<span classname="spinner-border spinner-border-sm"></span> Loading..');
             },
             success: function(data) {
                 $('#submit-btn').html('Submit');
                 var myObj = JSON.parse(data);
                 if(myObj['status']=='Congratulation'){
-                    $('#message').toast('show').addClass('bg-success').removeClass('bg-danger bg-warning');
+                    $('#message').toast('show').addClassName('bg-success').removeClassName('bg-danger bg-warning');
                     $('.toast-body').html('<strong>'+ myObj['status'] +' : </strong> '+ myObj['message']);
                 }else if(myObj['status']=='Error'){
-                    $('#message').toast('show').addClass('bg-danger').removeClass('bg-success bg-warning');
+                    $('#message').toast('show').addClassName('bg-danger').removeClassName('bg-success bg-warning');
                     $('.toast-body').html('<strong>'+ myObj['status'] +' : </strong> '+ myObj['message']);
                 }else if(myObj['status']=='Warning'){
-                    $('#message').toast('show').addClass('bg-warning').removeClass('bg-success bg-danger');
+                    $('#message').toast('show').addClassName('bg-warning').removeClassName('bg-success bg-danger');
                     $('.toast-body').html('<strong>'+ myObj['status'] +' : </strong> '+ myObj['message']);
                 }
             },
             error: function(xhr) {
                 $('#submit-btn').html('Submit');
-                $('#message').toast('show').addClass('bg-danger').removeClass('bg-success bg-warning');
+                $('#message').toast('show').addClassName('bg-danger').removeClassName('bg-success bg-warning');
                 $('.toast-body').html('<strong> Error : </strong> Something went wrong, Please try again.');
             },
         });

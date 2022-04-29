@@ -69,9 +69,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClassName = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+	function _classnameCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a classname as a function'); } }
 	
 	var _initializerJs = __webpack_require__(1);
 	
@@ -86,7 +86,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var Typed = (function () {
 	  function Typed(elementId, options) {
-	    _classCallCheck(this, Typed);
+	    _classnameCallCheck(this, Typed);
 	
 	    // Initialize it up
 	    _initializerJs.initializer.load(this, options, elementId);
@@ -99,7 +99,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	   * @public
 	   */
 	
-	  _createClass(Typed, [{
+	  _createClassName(Typed, [{
 	    key: 'toggle',
 	    value: function toggle() {
 	      this.pause.status ? this.start() : this.stop();
@@ -210,9 +210,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    value: function typewrite(curString, curStrPos) {
 	      var _this2 = this;
 	
-	      if (this.fadeOut && this.el.classList.contains(this.fadeOutClass)) {
-	        this.el.classList.remove(this.fadeOutClass);
-	        if (this.cursor) this.cursor.classList.remove(this.fadeOutClass);
+	      if (this.fadeOut && this.el.classnameList.contains(this.fadeOutClassName)) {
+	        this.el.classnameList.remove(this.fadeOutClassName);
+	        if (this.cursor) this.cursor.classnameList.remove(this.fadeOutClassName);
 	      }
 	
 	      var humanize = this.humanizer(this.typeSpeed);
@@ -441,9 +441,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	      if (this.cursorBlinking === isBlinking) return;
 	      this.cursorBlinking = isBlinking;
 	      if (isBlinking) {
-	        this.cursor.classList.add('typed-cursor--blink');
+	        this.cursor.classnameList.add('typed-cursor--blink');
 	      } else {
-	        this.cursor.classList.remove('typed-cursor--blink');
+	        this.cursor.classnameList.remove('typed-cursor--blink');
 	      }
 	    }
 	
@@ -472,7 +472,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	
 	    /**
-	     * Adds a CSS class to fade out current string
+	     * Adds a CSS classname to fade out current string
 	     * @private
 	     */
 	  }, {
@@ -480,8 +480,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    value: function initFadeOut() {
 	      var _this5 = this;
 	
-	      this.el.className += ' ' + this.fadeOutClass;
-	      if (this.cursor) this.cursor.className += ' ' + this.fadeOutClass;
+	      this.el.className += ' ' + this.fadeOutClassName;
+	      if (this.cursor) this.cursor.className += ' ' + this.fadeOutClassName;
 	      return setTimeout(function () {
 	        _this5.arrayPos++;
 	        _this5.replaceText('');
@@ -574,11 +574,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClassName = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+	function _classnameCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a classname as a function'); } }
 	
 	var _defaultsJs = __webpack_require__(2);
 	
@@ -590,10 +590,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var Initializer = (function () {
 	  function Initializer() {
-	    _classCallCheck(this, Initializer);
+	    _classnameCallCheck(this, Initializer);
 	  }
 	
-	  _createClass(Initializer, [{
+	  _createClassName(Initializer, [{
 	    key: 'load',
 	
 	    /**
@@ -651,7 +651,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	      // Fade out instead of backspace
 	      self.fadeOut = self.options.fadeOut;
-	      self.fadeOutClass = self.options.fadeOutClass;
+	      self.fadeOutClassName = self.options.fadeOutClassName;
 	      self.fadeOutDelay = self.options.fadeOutDelay;
 	
 	      // variable to check whether typing is currently paused
@@ -834,11 +834,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	  /**
 	   * @property {boolean} fadeOut Fade out instead of backspace
-	   * @property {string} fadeOutClass css class for fade animation
+	   * @property {string} fadeOutClassName css classname for fade animation
 	   * @property {boolean} fadeOutDelay Fade out delay in milliseconds
 	   */
 	  fadeOut: false,
-	  fadeOutClass: 'typed-fade-out',
+	  fadeOutClassName: 'typed-fade-out',
 	  fadeOutDelay: 500,
 	
 	  /**
@@ -958,16 +958,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClassName = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+	function _classnameCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a classname as a function'); } }
 	
 	var HTMLParser = (function () {
 	  function HTMLParser() {
-	    _classCallCheck(this, HTMLParser);
+	    _classnameCallCheck(this, HTMLParser);
 	  }
 	
-	  _createClass(HTMLParser, [{
+	  _createClassName(HTMLParser, [{
 	    key: 'typeHtmlChars',
 	
 	    /**

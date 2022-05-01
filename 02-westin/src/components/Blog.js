@@ -1,6 +1,6 @@
-import React from 'react'
-import BlogItem from './BlogItem'
-import SectionTitle from './SectionTitle'
+import React from 'react';
+import BlogItem from './BlogItem';
+import SectionTitle from './SectionTitle';
 
 const Blog = () => {
   return (
@@ -14,26 +14,40 @@ const Blog = () => {
         <div className="row mt-3">
         
             <div className="col-md-6 col-lg-4">
-                <BlogItem  resim="assets/img/blog-img-01.png" tarih="22th may" isim="Jone Doe" baslik="Write Your Dreams" yorum="5"
+                <BlogItem  resim="assets/img/blog-img-01.png" 
+                tarih="22th may" 
+                isim="Jone Doe" 
+                baslik="Write Your Dreams"
+                 yorum="5"
                  mesaj="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod"/>
                
             </div>
   
             <div className="col-md-6 col-lg-4">
-            <BlogItem  resim="assets/img/blog-img-02.png" tarih="12th june" isim="Jone Doe" baslik="Enjoy Your Happy Life"
-             yorum="2" mesaj="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod."/>
+            <BlogItem 
+             resim="assets/img/blog-img-02.png" 
+             tarih="12th june" 
+             isim="Jone Doe" 
+             baslik="Enjoy Your Happy Life"
+             yorum="2" 
+             mesaj="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod."/>
 
                 </div>
             
             <div className="col-md-6 col-lg-4">
-            <BlogItem  resim="assets/img/blog-img-03.png" tarih="25th Nov" isim="Jone Doe" baslik="Beautiful Life"
-             yorum="2" mesaj="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod."/>
+            <BlogItem
+              resim="assets/img/blog-img-03.png" 
+              tarih="25th Nov"
+               isim="Jone Doe"
+                baslik="Beautiful Life"
+             yorum="2" 
+             mesaj="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod."/>
            </div>
                     
     </div>
     </div>
 </section>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;

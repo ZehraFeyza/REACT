@@ -8,7 +8,8 @@ const BlogItem = (props) => {
     </div>
     <div className="blog-box">
         <div className="blog-time"> {props.tarij} </div>
-        <h5 className="Blog-title mb-0"><a href="#"> {props.baslik} </a></h5>
+        <h5 className="Blog-title mb-0">
+            <a href="#"> {props.baslik} </a></h5>
         <ul className="list-inline">
             <li className="list-inline-item">
                 <a href="#">
@@ -23,13 +24,13 @@ const BlogItem = (props) => {
                 </a>
             </li>
         </ul>
-        <p className="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+        <p className="mb-0">{props.mesaj}</p>
         <div className="blog-link">
-            <a href="blog-single-colorfull.html.htm">Read More...</a>
+            <a href="#">Read More...</a>
         </div>
     </div>
 </div>
   )
 }
 
-export default BlogItem
+export default BlogItem;

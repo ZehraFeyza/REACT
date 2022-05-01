@@ -9,10 +9,15 @@ const Banner = () => {
                 <div className="col-lg-12">
                     <div className="hero-content text-center">
                         <div className="hero-img">
-                            <img src="assets/img/man-avator.png" alt="/"/>
+                            <img src="assets/img/man-avator.png"
+                             alt="/"/>
                         </div>
                         <h3 className="mb-0 mt-3">I'M John Doe</h3>
-                        <h1 className="text-capitalize mb-3"><span className="base-color">A  </span> <span className="element" data-elements="UI Designer.,Web Designer.,Web Developer."></span></h1>
+                        <h1 className="text-capitalize mb-3">
+                            <span className="base-color">A  
+                            </span> <span className="element"
+                             data-elements="UI Designer.,Web Designer.
+                             ,Web Developer."></span></h1>
                         <a href="#" className="pill-button-01">Download Cv</a>
                     </div>
                 </div>

@@ -1,3 +1,4 @@
+import React from 'react';
 import "./ExternalStyle.css";
 
 const ExternalStyle=()=>{

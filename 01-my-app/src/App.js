@@ -1,13 +1,18 @@
 import React from "react";
+
+import BSClassic from "./components/bootsrap-classic/BSClassic";
+import BSReact from "./components/bootstrap-react/BSReact";
 import Clock1 from "./components/clock1/Clock1";
 import Clock2 from "./components/clock2/Clock2";
 import Hello from "./components/hello/Hello";
+import Image from "./components/image/Image";
 import Jsx from "./components/jsx/Jsx";
 import Profile from "./components/profile/Profile";
 import Props from "./components/props/Props";
+import Shop from "./components/shop/Shop";
 import ExternalStyle from "./components/style/ExternalStyle";
 import InlıneStyle from "./components/style/InlıneStyle";
-import InternalStyle from "./components/style/InternalStyle";
+
 import Test from "./components/test/Test";
 
 
@@ -38,7 +43,7 @@ function App() {//Burası  ana komponenttir
     <Clock2 yaziRengi="purple"   zeminRengi="navy"/>
 
 
-*/}
+
 <div style= {{display:"flex",justifyContent:"space-evenly"}} >
 <Profile
  avatar={avatarUrl}
@@ -70,6 +75,10 @@ function App() {//Burası  ana komponenttir
    />
     </div>
 
+<Image/>
+<BSClassic/>
+<BSReact/>*/}
+<Shop/>
     </div>
 ) ;
 }

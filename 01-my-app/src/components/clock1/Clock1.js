@@ -1,3 +1,4 @@
+import React from 'react';
 import "./clock1.css";
 import moment from "moment";
 const  Clock1=()=>{

@@ -1,3 +1,5 @@
+
+import React from 'react';
 import "./clock2.css";
 import moment from "moment";
 const  Clock2=(props)=>{

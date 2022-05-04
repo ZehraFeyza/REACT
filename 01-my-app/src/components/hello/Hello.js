@@ -1,3 +1,4 @@
+import React from 'react';
 import Comp from "../comp/Comp";
 const Hello=()=>{
     return (

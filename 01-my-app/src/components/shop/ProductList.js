@@ -4,17 +4,20 @@ import Product from './Product';
 import {Container,Row,Col} from "react-bootstrap";
 
 const ProductList = () => {
+
   return (
    <Container className="my-5">
      <Row className="g-5">
 {data.map((product)=>{
+
+const {id,title,image,desc,price}=product;
     return(
- <Col md={3}>
+ <Col md={3} key={id}>
       <Product
-       title={product.title} 
-       image={product.image} 
-       desc={product.desc} 
-       price={product.price} />
+       title={title} 
+       image={image} 
+       desc={desc} 
+       price={price} />
        </Col>
         ) ;
         })  }

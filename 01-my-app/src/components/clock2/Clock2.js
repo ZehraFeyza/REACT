@@ -17,11 +17,11 @@ else message="night";
 
 
     return (
-    <div classnameName="clock-container" style={{color:props.yaziRengi , background:props.zeminRengi}}> 
-        <div classnameName="clock"> {timeStr}  </div>
+    <div className="clock-container" style={{color:props.yaziRengi , background:props.zeminRengi}}> 
+        <div className="clock"> {timeStr}  </div>
         <div>
-            <div classnameName="date"> {dateStr} </div>
-            <div classnameName="day">{dayStr} {message} </div>
+            <div className="date"> {dateStr} </div>
+            <div className="day">{dayStr} {message} </div>
         </div>
     </div>
     );

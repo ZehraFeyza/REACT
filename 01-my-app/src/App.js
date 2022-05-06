@@ -8,6 +8,7 @@ import Clock1 from "./components/clock1/Clock1";
 import Clock2 from "./components/clock2/Clock2";
 import Clock3 from "./components/clock3/Clock3";
 import Counter from "./components/counter/Counter";
+import Countries from "./components/countries/Countries";
 import Hello from "./components/hello/Hello";
 import Image from "./components/image/Image";
 import Jsx from "./components/jsx/Jsx";
@@ -21,6 +22,8 @@ import InlıneStyle from "./components/style/InlıneStyle";
 
 import Test from "./components/test/Test";
 import ChangeTitle from "./components/useEffect/ChangeTitle";
+import SatirTablo from "./components/usercards/SatirTablo";
+import UserCards from "./components/usercards/UserCards";
 
 
 
@@ -90,8 +93,11 @@ function App() {//Burası  ana komponenttir
 <Counter/>
 <Odev/>
 <Birtday/>
-<Clock3/>*/}
+<Clock3/>
 <ChangeTitle/>
+<UserCards/>
+<SatirTablo/>*/}
+<Countries/>
     </div>
 ) ;
 }

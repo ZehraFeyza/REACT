@@ -12,6 +12,7 @@ import Countries from "./components/countries/Countries";
 import Hello from "./components/hello/Hello";
 import Image from "./components/image/Image";
 import Jsx from "./components/jsx/Jsx";
+import Posts from "./components/posts/Posts";
 import Profile from "./components/profile/Profile";
 import Props from "./components/props/Props";
 import Odev from "./components/state/Odev";
@@ -96,8 +97,10 @@ function App() {//Burası  ana komponenttir
 <Clock3/>
 <ChangeTitle/>
 <UserCards/>
-<SatirTablo/>*/}
-<Countries/>
+<SatirTablo/>
+<Countries/>*/}
+
+<Posts/>
     </div>
 ) ;
 }

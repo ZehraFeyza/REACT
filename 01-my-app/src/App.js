@@ -9,12 +9,16 @@ import Clock2 from "./components/clock2/Clock2";
 import Clock3 from "./components/clock3/Clock3";
 import Counter from "./components/counter/Counter";
 import Countries from "./components/countries/Countries";
+import Form1 from "./components/forms/Form1";
+import Form2 from "./components/forms/Form2";
+import Form3 from "./components/forms/Form3";
 import Hello from "./components/hello/Hello";
 import Image from "./components/image/Image";
 import Jsx from "./components/jsx/Jsx";
 import Posts from "./components/posts/Posts";
 import Profile from "./components/profile/Profile";
 import Props from "./components/props/Props";
+import RandomImages from "./components/randomImages/RandomImages";
 import Odev from "./components/state/Odev";
 
 import State from "./components/state/State";
@@ -98,9 +102,13 @@ function App() {//Burası  ana komponenttir
 <ChangeTitle/>
 <UserCards/>
 <SatirTablo/>
-<Countries/>*/}
+<Countries/>
 
 <Posts/>
+<RandomImages/>
+<Form1/>
+<Form2/>*/}
+<Form3/>
     </div>
 ) ;
 }

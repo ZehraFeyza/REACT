@@ -1,5 +1,5 @@
 import React from 'react'
-import data from "../../data/Product.json";
+import data from "../../data/products.json";
 import Product from './Product';
 import {Container,Row,Col} from "react-bootstrap";
 

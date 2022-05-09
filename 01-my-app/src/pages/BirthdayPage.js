@@ -1,7 +1,7 @@
 import React from 'react'
 import Birtday from "../components/birthday/Birtday";
 
-const Birtdaypages = () => {
+const BirthdayPage = () => {
   return (
     <div>
         <Birtday/>
@@ -9,4 +9,4 @@ const Birtdaypages = () => {
   )
 }
 
-export default Birtdaypages
+export default BirthdayPage

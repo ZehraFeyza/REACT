@@ -12,6 +12,7 @@ import Countries from "./components/countries/Countries";
 import Form1 from "./components/forms/Form1";
 import Form2 from "./components/forms/Form2";
 import Form3 from "./components/forms/Form3";
+import Form4 from "./components/forms/Form3";
 import Hello from "./components/hello/Hello";
 import Image from "./components/image/Image";
 import Jsx from "./components/jsx/Jsx";
@@ -107,8 +108,10 @@ function App() {//Burası  ana komponenttir
 <Posts/>
 <RandomImages/>
 <Form1/>
-<Form2/>*/}
-<Form3/>
+<Form2/>
+<Form3/>*/}
+<Form4/>
+
     </div>
 ) ;
 }

@@ -16,10 +16,7 @@ const Form3 = () => {
 const handleChange=(e)=>{
   const{ name,value}=e.target;
 setFormData({...formData , [name]:value});
-}
-
-
-
+};
 
 const handleSubmit=(e)=>{
     e.preventDefault();
@@ -27,6 +24,7 @@ const handleSubmit=(e)=>{
     setLoading(true);
     setMesaj("");
     console.log(formData);
+    //Burası Fake API
     setTimeout(()=>{
       setMesaj("Bilgileriniz basarili bir sekilde gönderildi");
       setLoading(false);

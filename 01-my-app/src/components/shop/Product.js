@@ -9,7 +9,7 @@ const {image,title,desc,price}=props;
   return (
   
       <Card >
-  <Card.Img variant="top" src={require(`../../assets/img/${image}.default`)}/>
+  <Card.Img variant="top" src={require(`../../assets/img/${image}`)}/>
   <Card.Body>
     <Card.Title>{title}</Card.Title>
     <Card.Text>{desc} </Card.Text>
